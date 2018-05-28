@@ -3,6 +3,7 @@
     package="com.abiramee.gradientview">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27" />
 
     <application
         android:allowBackup="true"
