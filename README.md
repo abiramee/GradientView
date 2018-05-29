@@ -41,7 +41,7 @@ dependencies {
  <version>1.0.0</version>
 </dependency>
 ```
-# Basic Uses
+# Basic Usage
 ##### Adding GradientView in to the XML
 ```xml
 <com.abiramee.gradientview.GradientView
