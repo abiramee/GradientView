@@ -10,8 +10,10 @@
         android:id="@+id/view_gradient"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:end_color="#753a88"
+        app:end_color="#f64f59"
         app:orientation="TOP_BOTTOM"
-        app:start_color="#cc2b5e" />
+        app:start_color="#12c2e9"
+        app:center_color="#c471ed"
+     />
 
 </RelativeLayout>

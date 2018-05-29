@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.abiramee.gradientview">
 
-    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27" />
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="27"
+        tools:ignore="GradleOverrides" />
 
     <application
         android:allowBackup="true"

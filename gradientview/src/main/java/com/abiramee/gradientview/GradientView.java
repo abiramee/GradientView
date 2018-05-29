@@ -56,17 +56,6 @@ public class GradientView extends RelativeLayout {
 
     private GradientDrawable mGradientDrawable;
 
-    //orientation constants
-    public static String TOP_BOTTOM = "0";
-    public static String TR_BL = "1";
-    public static String RIGHT_LEFT = "2";
-    public static String BR_TL = "3";
-    public static String BOTTOM_TOP = "4";
-    public static String BL_TR = "5";
-    public static String LEFT_RIGHT = "6";
-    public static String TL_BR = "7";
-
-
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public GradientView(Context context) {
         super(context);
@@ -173,7 +162,7 @@ public class GradientView extends RelativeLayout {
     private void setUpBackgroundImage() {
         mImageViewBackground.setImageDrawable(mDrawableBackgroundImage);
         mImageViewBackground.setCornerRadius(mRadius);
-        mImageViewBackground.setScaleType(ImageView.ScaleType.FIT_XY);
+        mImageViewBackground.setScaleType(ImageView.ScaleType.CENTER_CROP);
         mImageViewBackground.setAlpha(0.5f);
 
         if (mLastImageURL != null) {
@@ -237,7 +226,7 @@ public class GradientView extends RelativeLayout {
                         .dontTransform())
                 .into(mImageViewBackground);
         mImageViewBackground.setAlpha(0.5f);
-        mImageViewBackground.setScaleType(ImageView.ScaleType.FIT_XY);
+        mImageViewBackground.setScaleType(ImageView.ScaleType.CENTER_CROP);
     }
 
     public void setBackgroundImageURL(String imageURL) {
@@ -252,6 +241,6 @@ public class GradientView extends RelativeLayout {
                         .dontTransform())
                 .into(mImageViewBackground);
         mImageViewBackground.setAlpha(0.5f);
-        mImageViewBackground.setScaleType(ImageView.ScaleType.FIT_XY);
+        mImageViewBackground.setScaleType(ImageView.ScaleType.CENTER_CROP);
     }
 }
